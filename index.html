@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <!-- Add your CSS here -->
+ <style>
+
+  .nav-link {
+    color: grey; 
+    transition: color 0.3s;
+  }
+
+  .nav-link i {
+    color: grey;
+    transition: color 0.3s;
+  }
+
+  .nav-link.active {
+    color: blue; 
+  }
+
+  .nav-link.active i {
+    color: blue;
+  }
+</style>
+<!-- Add Bootstrap CSS link if needed -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Instagram Feed</title>
+  </head>
+  <body class="bg-light">
+    <div class="container-fluid m-auto">
+        <nav class="navbar-light bg-light row p-2" style="font-family: Arial, Helvetica, sans-serif; font-weight: bolder";>
+          <div class="d-flex col-6">      
+          <i class="fa fa-instagram p-1 mb-0" style="font-size:48px"></i>
+                <h4 class="my-auto">Instagram</h4>
+          </div>
+                
+          <!--modal -->
+          <div class="d-flex p-2 ml-auto col-6 justify-content-end">          
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Create a new post
+            </button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="mb-3">
+                      <label for="exampleFormControlTextarea1" class="form-label">Caption:</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Add the caption of your post here"></textarea>
+                    </div>
+                  
+                    <button class="btn border" style="font-size:15px"><i class="fa fa-camera"></i></button>
+                    <button class="btn border" style="font-size:15px"><i class="fa fa-map-marker"></i></button>
+                  
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+              
+
+
+      <!--Dropdown-->
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary mx-2 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          Action
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Profile</a></li>
+          <li><a class="dropdown-item" href="#">Accessibility </a></li>
+          <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#" style="color: red;">Logout</a></li>
+        </ul>
+        </div>
+  </nav>
+</div>
+
+<!--Toggle buttons-->
+<nav>
+  <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fa fa-square" style="font-size: 25px;"></i></button>
+    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="material-icons">grid_on</i></button>
+  </div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+    <div class="container-fluid col-4 bg-light border border-dark mt-5 px-0">
+      <div class="d-flex mx-auto col-12 p-1">
+        <h6 class="mt-2 mb-2 ml-1 col-8">My Crazy dog Spark!</h6>
+        <p class="d-flex col-4 justify-content-end" style="font-size: 12px;">08/26</p>
+      </div>
+      <img src="https://picsum.photos/400/300" class="w-100"/>
+      <p class="mt-1 ml-1 mb-0 px-1" style="font-size: 11px;"><strong>204 Likes</strong></p>
+      <p class="ml-1 mt-1 px-1" style="font-size: 12px;">This is an example of a very good photo that you can post on</p>
+    </div>
+    <div class="container-fluid col-4 bg-light border border-dark mt-5 px-0">
+      <div class="d-flex mx-auto col-12 p-1">
+        <h6 class="mt-2 mb-2 ml-1 col-8">My Crazy dog Spark!</h6>
+        <p class="d-flex col-4 justify-content-end" style="font-size: 12px;">08/26</p>
+      </div>
+      <img src="https://picsum.photos/400/300" class="w-100"/>
+      <p class="mt-1 ml-1 mb-0 px-1" style="font-size: 11px;"><strong>204 Likes</strong></p>
+      <p class="ml-1 mt-1 px-1" style="font-size: 12px;">This is an example of a very good photo that you can post on</p>
+    </div>
+    <div class="container-fluid col-4 bg-light border border-dark mt-5 px-0">
+      <div class="d-flex mx-auto col-12 p-1">
+        <h6 class="mt-2 mb-2 ml-1 col-8">My Crazy dog Spark!</h6>
+        <p class="d-flex col-4 justify-content-end" style="font-size: 12px;">08/26</p>
+      </div>
+      <img src="https://picsum.photos/400/300" class="w-100"/>
+      <p class="mt-1 ml-1 mb-0 px-1" style="font-size: 11px;"><strong>204 Likes</strong></p>
+      <p class="ml-1 mt-1 px-1" style="font-size: 12px;">This is an example of a very good photo that you can post on</p>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+    <div class="container-fluid col-12 bg-light border border-dark mt-4 px-0 pt-0">
+      <div class="row">
+        <img src="https://picsum.photos/400/300" class="col-4 p-1"/>
+        <img src="https://picsum.photos/400/300" class="col-4 p-1"/>
+        <img src="https://picsum.photos/400/300" class="col-4 p-1"/>
+        <img src="https://picsum.photos/400/300" class="col-4 p-1"/>
+        <img src="https://picsum.photos/400/300" class="col-4 p-1"/>
+        <img src="https://picsum.photos/400/300" class="col-4 p-1"/>
+        <img src="https://picsum.photos/400/300" class="col-4 p-1"/>
+        <img src="https://picsum.photos/400/300" class="col-4 p-1"/>
+        <img src="https://picsum.photos/400/300" class="col-4 p-1"/>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
